@@ -3,29 +3,26 @@ project:
   
 website: 
   page-navigation: true
-  title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  title: "MAR 580 - Fall 2025" 
+  site-url: "https://gavinfay.github.io/mar580-advpopmod-f25" 
+  repo-url: https://github.com/gavinfay/mar580-advpopmod-f25 
   repo-actions: [edit, issue]
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2024"
+    left: "&copy; CC-By Gavin Fay, 2025, and CC-By Openscapes, 2024"
     
   sidebar:
-    logo: "images/openscapes_hex.png"
+    logo: "images/logo.png"
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+        href: https://thefaylab.com
+        text: "thefaylab.com"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://github.com/gavinfay/mar580-advpopmod-f25
+        text: "MAR580 website"
 
     style: "docked"
     search: true
@@ -33,15 +30,16 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - explore.qmd
-      - section: quarto-workflows/index.qmd
-        contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
-      - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
+      - href: course-syllabus.qmd
+        text: Syllabus
+      - section: "Projects"
+        contents:
+          - href: project-description.qmd
+            text: Description      
+      - section: "Materials"
+        contents:
+          - href: materials/2025-09-04/index.qmd
+            text: "2025-09-04"
 
 
 format:
