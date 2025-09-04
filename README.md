@@ -1,2 +1,2 @@
 # Advanced Population Modeling Fall 2025
-UMass Dartmouth
+Gavin Fay's course at UMass Dartmouth
