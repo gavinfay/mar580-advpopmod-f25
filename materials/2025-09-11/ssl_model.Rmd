@@ -1,0 +1,110 @@
+---
+title: "Steller sea lion matrix projection modeling"
+output:
+  pdf_document: default
+---
+
+# Southeast AK Steller sea lions
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+```{r data}
+pups <- read_csv("../data/SSLpupcounts2016.csv")
+nonpups <- read_csv("../data/SSLnonpupcounts2016.csv")
+pups
+```
+
+## Pup counts
+```{r datamung}
+se_pups <- pups |> 
+  filter(rookery == 1,
+         trendsite == 1,
+         regionnumb == 5) |> 
+  group_by(Year, sitename) |> 
+  summarize(pupcount = max(pupcount, na.rm = TRUE)) |> 
+  ungroup() |> 
+  group_by(Year) |> 
+  summarize(n = length(pupcount),
+            pupcount = sum(pupcount, na.rm = TRUE))
+
+ggplot(se_pups) +
+  geom_point(aes(x = Year, y = pupcount)) +
+  labs(title = "Pup Counts")
+
+```
+
+## Non-pup counts
+```{r datamung2}
+se_nonpups <- nonpups |> 
+  filter(trendsite == 1,
+         regionnumb == 5) |> 
+  group_by(Year, sitename) |> 
+  summarize(adultcount = max(adultcount, na.rm = TRUE)) |> 
+  ungroup() |> 
+  group_by(Year) |> 
+  summarize(n = length(adultcount),
+            adultcount = sum(adultcount, na.rm = TRUE))
+
+ggplot(se_nonpups) +
+  geom_point(aes(x = Year, y = adultcount)) +
+  labs(title = "Counts of Non-pups")
+```
+
+## Stage-structured population projection model
+
+$$ \begin{bmatrix}
+N_{pups, t+1} \\
+N_{np, t+1} \\
+\end{bmatrix} = \begin{bmatrix}
+0 &  f \\
+\phi_p &  \phi_{np} \\
+\end{bmatrix} \begin{bmatrix}
+N_{pups, t} \\
+N_{np, t} \\
+\end{bmatrix}$$
+
+```{r SSL matrix model}
+
+N0 <- c(1000, 2500)
+N0
+
+fec <- 0.25  # 63% pregnancy rate *0.5 for males * 80% for immature animals 
+phi1 <- 0.6  #avg. of Forester Island rates for males & females
+phi2 <- 0.9  #avg. of FI males/females juvs & adults given stable age distribution
+
+X <- matrix(c(0, fec,
+              phi1, phi2), byrow = TRUE, nrow = 2)
+X
+
+#X*N
+
+N1 <- X %*% N0
+N1
+pups <- 0.25*N0[2]
+pups
+nonpups <- 0.6*N0[1] + 0.9*N0[2]
+nonpups
+```
+
+## Do a population projection for 40 years
+```{r projection}
+
+Nstore <- matrix(rep(NA, 80), byrow = TRUE, ncol = 2)
+Nstore[1,] <- N0
+head(Nstore)
+for (t in 2:40)
+  Nstore[t,] <- X%*%Nstore[t-1,]
+head(Nstore)
+tail(Nstore)
+```
+
+
+## Population growth rate
+```{r}
+sum(Nstore[40,])/sum(Nstore[39,])
+eigen(X)
+library(popbio)
+eigen.analysis(X)
+```
