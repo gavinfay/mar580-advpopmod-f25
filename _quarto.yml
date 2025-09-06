@@ -1,6 +1,10 @@
 project: 
   type: website
-  
+  render: 
+    - "*.qmd"
+    - "!*.Rmd"
+    - "LICENSE.md"
+    
 website: 
   page-navigation: true
   title: "MAR 580 - Fall 2025" 
