@@ -40,7 +40,8 @@ website:
         contents:
           - href: materials/2025-09-04/index.qmd
             text: "2025-09-04"
-
+          - href: materials/2025-09-11/index.qmd
+            text: "2025-09-11"
 
 format:
   html:
