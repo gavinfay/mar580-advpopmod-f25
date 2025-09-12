@@ -4,25 +4,29 @@ title: "Syllabus"
 
 [**Click here**](syllabus/MAR580-ADVPOPMOD_syllabus_f2025_web_2025-08-28.pdf "PDF of syllabus") **to download a PDF copy of the syllabus. *(****last updated 2025-08-28)*
 
-**Semester:		Fall 2025**
+**Semester: Fall 2025**
 
-**Course Number: 	MAR 580**
+**Course Number: MAR 580**
 
-**Course Title: 	Advanced Population Modeling for Management of Living Natural Resources**
+**Course Title: Advanced Population Modeling for Management of Living Natural Resources**
 
-**Instructors:** 		Gavin Fay, Associate Professor
+**Instructors:** Gavin Fay, Associate Professor
 
-			School for Marine Science & Technology
+```         
+        School for Marine Science & Technology
+```
 
 SMAST East 228; (508) 910-6363; [gfay\@umassd.edu](mailto:gfay@umassd.edu)
 
 **Class Location:** SMAST East Room 247
 
-			836 S Rodney French Blvd, New Bedford, MA 02744
+```         
+        836 S Rodney French Blvd, New Bedford, MA 02744
 
-			and synchronous [via Zoom](https://umassd.zoom.us/j/92442579566?pwd=vmyQOoKTaxeKjIiVrCO2uELmhsYJt8.1)
+        and synchronous via Zoom
+```
 
-**Class Time:** 		Tuesday/Thursday 2:00-3:30
+**Class Time:** Tuesday/Thursday 2:00-3:30
 
 **Course website:** [gavinfay.github.io/mar580-advpopmod-f25](http://gavinfay.github.io/mar580-advpopmod-f25)
 
@@ -32,7 +36,7 @@ SMAST East 228; (508) 910-6363; [gfay\@umassd.edu](mailto:gfay@umassd.edu)
 
 World events, including COVID-19, continue to create uncertainty. These and other topics (both shared and non visible) will at times create stress within our learning community. I want you to succeed in this course and will do what I can to help support your being able to meet our learning objectives. Please communicate with me if there are additional things I can do to help support you.
 
-**Code of Conduct:** This class follows the[ Fay Lab Code of Conduct](https://thefaylab.github.io/lab-manual/03-code-of-conduct.html), which applies to all class spaces, including classrooms, Zoom calls, class GoogleDocs or other materials, and student hours. You can also read my lab’s[ lab culture and philosophy](https://thefaylab.github.io/lab-manual/02-lab-culture-philosophy.html), which underpins my approach to teaching and collaboration.
+**Code of Conduct:** This class follows the[Fay Lab Code of Conduct](https://thefaylab.github.io/lab-manual/03-code-of-conduct.html), which applies to all class spaces, including classrooms, Zoom calls, class GoogleDocs or other materials, and student hours. You can also read my lab’s[lab culture and philosophy](https://thefaylab.github.io/lab-manual/02-lab-culture-philosophy.html), which underpins my approach to teaching and collaboration.
 
 \
 
@@ -121,7 +125,7 @@ Newman, K. B., Buckland, S. T., Morgan, B. J., King, R., Borchers, D. L., Cole, 
 \
 
 |  |  |  |  |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | **Date** | **Day** | **Topic** | **Key info** |
 | Sep 4 | Th | Numerical methods review, model fitting in R |  |
 | Sep 9\* | Tu | process-based model building, matrix pop dy models | HW 1 assigned |
@@ -188,7 +192,7 @@ This syllabus is a guide and every attempt is made to provide an accurate overvi
 
 8.  Available academic support services are available at: [www.umassd.edu/nfi/teaching-and-advising/course-syllabus/sample-disability-statement](http://www.umassd.edu/nfi/teaching-and-advising/course-syllabus/sample-disability-statement)  
 
-9.  SMAST Code of Conduct and Diversity statement:[ https://www.umassd.edu/media/umassdartmouth/smast/lab-pdf-files/SMAST-Code-of-Conduct-and-Diversity-Statement.pdf](https://www.umassd.edu/media/umassdartmouth/smast/lab-pdf-files/SMAST-Code-of-Conduct-and-Diversity-Statement.pdf)
+9.  SMAST Code of Conduct and Diversity statement:<https://www.umassd.edu/media/umassdartmouth/smast/lab-pdf-files/SMAST-Code-of-Conduct-and-Diversity-Statement.pdf>
 
 \
 
@@ -200,13 +204,13 @@ This syllabus is a guide and every attempt is made to provide an accurate overvi
 
  
 
-If a topic covered in this class triggers post-traumatic stress or other emotional distress, please discuss the matter with the professor or seek out confidential resources available from the Counseling Center,[ http://www.umassd.edu/counselling/](http://www.umassd.edu/counselling/), 508-999-8648 or -8650, or the Victim Advocate in the Center for Women, Gender and Sexuality,[ http://www.umassd.edu/sexualviolence/](http://www.umassd.edu/sexualviolence/), 508-910-4584. In an emergency contact the Department of Public Safety at 508-999-9191 24 hrs./day.
+If a topic covered in this class triggers post-traumatic stress or other emotional distress, please discuss the matter with the professor or seek out confidential resources available from the Counseling Center,<http://www.umassd.edu/counselling/>, 508-999-8648 or -8650, or the Victim Advocate in the Center for Women, Gender and Sexuality,<http://www.umassd.edu/sexualviolence/>, 508-910-4584. In an emergency contact the Department of Public Safety at 508-999-9191 24 hrs./day.
 
  
 
 UMass Dartmouth, following national guidance from the Office of Civil Rights, requires that faculty follow UMass Dartmouth policy as a “mandated reporter” of any disclosure of sexual harassment, abuse, and/or violence shared with the faculty member in person and/or via email. These disclosures include but are not limited to reports of sexual assault, relational abuse, relational/domestic violence, and stalking. While faculty are often able to help students locate appropriate channels of assistance on campus, disclosure by the student to the faculty member requires that the faculty member inform the University’s Title IX Coordinator in the Office of Diversity, Equity and Inclusion at 508-999-8008 to help ensure that the student’s safety and welfare is being addressed, even if the student requests that the disclosure not be shared.
 
-For confidential counseling support and assistance, please go to[ http://www.umassd.edu/sexualviolence/](http://www.umassd.edu/sexualviolence/)
+For confidential counseling support and assistance, please go to<http://www.umassd.edu/sexualviolence/>
 
 \
 
@@ -216,13 +220,13 @@ I expect that everyone will maintain a classroom conducive to learning. Thus, ev
 
 \
 
-**AI, LLMs, and BS** (credit to[ Andrew Heiss](https://www.andrewheiss.com/))
+**AI, LLMs, and BS** (credit to[Andrew Heiss](https://www.andrewheiss.com/))
 
-AI tools are fast changing the landscape when it comes to work. This is especially true for coding, many software are embedding AI into them to assist users produce work and learn. While there is a relatively large component of the class related to scientific programming, we are doing this to support our statistical learning – the key objectives in the course are learning about and how to apply and evaluate statistical methods, not just the computer code to implement them. I highly recommend not using AI tools such as large language models (LLMs) for generating your writing in this class. I am not opposed to LLMs in many situations. For myself, I am beginning to use[ GitHub Copilot](https://github.com/features/copilot) for computer programming-related tasks, most often to assist with tasks I already know how to do, or are similar problems to something I have done before. Like many of you, I have also used ChatGPT to create code that I can then inspect and validate. Chances are if I write this next year my use cases will have increased. What we do know is that using LLMs requires careful skill and attention and practice. I REALLY like [Jenny Bryan’s thoughts on using LLMs to ‘vibe code’](https://www.linkedin.com/posts/libbyheeren_does-jenny-bryan-vibe-code-her-thoughts-activity-7364321666929209344-GhUv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8O2nIBuNs2rY_ZgoNxCL8xLTyb-I9b0Lg) (sidenote: Asking yourself “What Would Jenny Bryan Do?” is a pretty good lifehack when it comes to data science in my view). Google Docs and Microsoft Word now have built-in text-generation tools where you can start writing a sentence and let the machine take over the rest. ChatGPT and other services let you generate multi-paragraph essays with plausible-looking text. I encourage you to **please not use these for writing**. There’s a reason most university classes require some sort of writing, like reading reflections, essay questions, and research papers.[ The process of writing is actually the process of thinking](https://www.latimes.com/opinion/story/2023-06-20/google-microsoft-chatgpt-ai-writing-assistants-artificial-intelligence):
+AI tools are fast changing the landscape when it comes to work. This is especially true for coding, many software are embedding AI into them to assist users produce work and learn. While there is a relatively large component of the class related to scientific programming, we are doing this to support our statistical learning – the key objectives in the course are learning about and how to apply and evaluate statistical methods, not just the computer code to implement them. I highly recommend not using AI tools such as large language models (LLMs) for generating your writing in this class. I am not opposed to LLMs in many situations. For myself, I am beginning to use[GitHub Copilot](https://github.com/features/copilot) for computer programming-related tasks, most often to assist with tasks I already know how to do, or are similar problems to something I have done before. Like many of you, I have also used ChatGPT to create code that I can then inspect and validate. Chances are if I write this next year my use cases will have increased. What we do know is that using LLMs requires careful skill and attention and practice. I REALLY like [Jenny Bryan’s thoughts on using LLMs to ‘vibe code’](https://www.linkedin.com/posts/libbyheeren_does-jenny-bryan-vibe-code-her-thoughts-activity-7364321666929209344-GhUv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8O2nIBuNs2rY_ZgoNxCL8xLTyb-I9b0Lg) (sidenote: Asking yourself “What Would Jenny Bryan Do?” is a pretty good lifehack when it comes to data science in my view). Google Docs and Microsoft Word now have built-in text-generation tools where you can start writing a sentence and let the machine take over the rest. ChatGPT and other services let you generate multi-paragraph essays with plausible-looking text. I encourage you to **please not use these for writing**. There’s a reason most university classes require some sort of writing, like reading reflections, essay questions, and research papers.[The process of writing is actually the process of thinking](https://www.latimes.com/opinion/story/2023-06-20/google-microsoft-chatgpt-ai-writing-assistants-artificial-intelligence):
 
 Writing is hard because the process of getting something onto the page helps us figure out what we think—about a topic, a problem or an idea. If we turn to AI to do the writing, we’re not going to be doing the thinking either. That may not matter if you’re writing an email to set up a meeting, but it will matter if you’re writing a business plan, a policy statement or a court case. ([Rosenzweig 2023](https://www.latimes.com/opinion/story/2023-06-20/google-microsoft-chatgpt-ai-writing-assistants-artificial-intelligence))
 
-Using LLMs and AI to generate this writing will not help you think through the materials. You can create text and meet the suggested word count and finish the assignment, but the text will be meaningless. There’s an official philosophical term for this kind of writing:[ bullshit](https://doi.org/10.1007/s10676-024-09775-5) ([Hicks, Humphries, and Slater 2024](https://link.springer.com/article/10.1007/s10676-024-09775-5);[ Frankfurt 2005](https://doi.org/10.1515/9781400826537)). Philosophical bullshit is “speech or text produced without concern for its truth” ([Hicks, Humphries, and Slater 2024](https://link.springer.com/article/10.1007/s10676-024-09775-5)). Bullshit isn’t truth, but it’s also not lies (i.e. the opposite of truth). LLMs and AI systems like ChatGPT, Gemini, Claude, and so on are bullshit machines. That might sound hyperbolic, but at a technological level, that’s literally what they do. Do not replace the important work of writing your thoughts, perspectives, and critique with AI bullshit. Remember that the point of writing is to help crystallize your thinking. Chugging out words that make it look like you read and understand the content will not help you learn. In your project report, I want to see good engagement with the analyses that you have performed and your research questions. I want to see your thinking process. I want to see your personal insights about your work and its importance. I don’t want to see a bunch of words that look like a human wrote them. **That’s not useful for future you**. That’s not useful for me. 
+Using LLMs and AI to generate this writing will not help you think through the materials. You can create text and meet the suggested word count and finish the assignment, but the text will be meaningless. There’s an official philosophical term for this kind of writing:[bullshit](https://doi.org/10.1007/s10676-024-09775-5) ([Hicks, Humphries, and Slater 2024](https://link.springer.com/article/10.1007/s10676-024-09775-5);[Frankfurt 2005](https://doi.org/10.1515/9781400826537)). Philosophical bullshit is “speech or text produced without concern for its truth” ([Hicks, Humphries, and Slater 2024](https://link.springer.com/article/10.1007/s10676-024-09775-5)). Bullshit isn’t truth, but it’s also not lies (i.e. the opposite of truth). LLMs and AI systems like ChatGPT, Gemini, Claude, and so on are bullshit machines. That might sound hyperbolic, but at a technological level, that’s literally what they do. Do not replace the important work of writing your thoughts, perspectives, and critique with AI bullshit. Remember that the point of writing is to help crystallize your thinking. Chugging out words that make it look like you read and understand the content will not help you learn. In your project report, I want to see good engagement with the analyses that you have performed and your research questions. I want to see your thinking process. I want to see your personal insights about your work and its importance. I don’t want to see a bunch of words that look like a human wrote them. **That’s not useful for future you**. That’s not useful for me. 
 
 I will not spend time trying to guess if your assignments are AI-generated. If you do turn in AI-produced content, I won’t automatically give you a zero. I’ll grade your work based on its own merits. Remember that text generated by these platforms is philosophical bullshit. Since it has nothing to do with truth, it will not—by definition—earn good grades.
 
