@@ -1,0 +1,52 @@
+---
+output:
+  pdf_document: default
+---
+
+## MAR 580: Advanced Population Modeling
+## Fall 2025
+## Homework Assignment 1
+# Maximum Likelihood Estimation, exponential population model
+
+### Due: 09/30/25, 13:00 pm (Eastern Time)
+Please provide Gavin with a brief report containing your solutions to the tasks below, and also include your R script (or markdown) and any additional files needed to run your assignment. Remember that in addition to performing the technical analyses, communicating those analyses through interpretation and discussion is an important component.
+
+## Exponential model of population dynamics
+
+The deterministic exponential model of population dynamics can be described as:  
+$$ N_{t+1} = (1+r)N_{t} $$
+where $N_{t}$ is the number of individuals at time $t$, and $r$ is the annual percentage growth rate.  
+
+## Bering-Chukchi-Beaufort Sea Bowhead Whales
+
+Time series of estimates ($y_t$) of the number of BCB bowhead whales 1978-2001 are available from mark-recapture studies (Zeh & Punt, 2005).  
+
+| Year | Number | CV |
+|:-------:|:-----:|:-----:|
+| 1978	| 4765	| 0.305 | 
+| 1980	| 3885	| 0.343 | 
+| 1981	| 4467	| 0.273 | 
+| 1982	| 7395	| 0.281 | 
+| 1983	| 6573	| 0.345 | 
+| 1985	| 5762	| 0.253 | 
+| 1986	| 8917	| 0.215 | 
+| 1987	| 5298	| 0.327 | 
+| 1988	| 6928	| 0.12 | 
+| 1993	| 8167	| 0.071 | 
+| 2001	| 10545	| 0.128 | 
+
+We assume that the natural logs of these annual estimates are normally distributed around the natural logs of the true abundance. e.g.
+
+$$ ln(y_t) \sim N(ln(N_t), \sigma_{t}^2) $$
+
+## Tasks:
+1. Draw a graph of the population model variables, including relationships linking data, population variables, and parameters.  
+2. Reparameterize the population dynamics model so that the numbers at time $t$ are a function of the growth rate $r$ and the population size in 1978, $N_{1978}`$
+3. Fit the population dynamics model to the available abundance data. You can assume that the observation error variance does not change over time and is an estimable parameter.   
+4. Plot the resulting model predictions from the fitted model along with the data, and provide comment on the fit to the data (e.g. via residuals, etc.).  
+5. Provide an estimate for the growth rate $r$.  
+6. Produce an estimate (with std err) for the population size in 2002.  
+7. Comment on the assumptions of the model, and the implications of fitting this model to these data.  
+8. _BONUS:_ Construct a likelihood profile for $r$ to derive an approximate 95% confidence interval for $r$.  
+9. _BONUS:_ Compare results from 3-6 to those from a fitted model that uses the annual CVs for the abundance estimates rather than a time-invariant observation error variance.  
+

@@ -132,9 +132,9 @@ Newman, K. B., Buckland, S. T., Morgan, B. J., King, R., Borchers, D. L., Cole, 
 | Sep 11 | Th | state-space models |  |
 | Sep 16 | Tu | NO CLASS - ICES ANNUAL SCIENCE CONFERENCE |  |
 | Sep 18 | Th | NO CLASS - ICES ANNUAL SCIENCE CONFERENCE |  |
-| Sep 23 | Tu | Introduction to Template Model Builder | HW1 due |
+| Sep 23 | Tu | Introduction to Template Model Builder |  |
 | Sep 25 | Th | TMB session 02, surplus production models |  |
-| Sep 30 | Tu | TMB session 03, coho salmon example |  |
+| Sep 30 | Tu | TMB session 03, coho salmon example | HW1 due |
 | Oct 2 | Th | Coho salmon lab review, HW2 (Steller sea lion modeling) assigned | HW 2 assigned |
 | Oct 7 | Tu | age-structured models, statistical catch at age |  |
 | Oct 9 | Th | model evaluation, simulation testing | HW 2 due |

@@ -1,0 +1,16 @@
+---
+title: "2025-09-16"
+editor: visual
+---
+
+No class this week, Gavin is at the ICES Annual Science Conference in Lithuania.
+
+## Reading
+
+📖 [Quinn, T. J. (2003). Ruminations on the development and future of population dynamics models in fisheries. *Natural Resource Modeling*, *16*(4), 341-392.](https://doi.org/10.1111/j.1939-7445.2003.tb00119.x Citations: 84)
+
+📖 [Thorson, J. T., & Minto, C. (2015). Mixed effects: a unifying framework for statistical modelling in fisheries biology. *ICES Journal of Marine Science*, *72*(5), 1245-1256.](https://doi.org/10.1093/icesjms/fsu213)
+
+## Participate
+
+📂 [Homework #1, due September 30](hw1.pdf)

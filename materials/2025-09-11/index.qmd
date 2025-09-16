@@ -21,4 +21,8 @@ Reminder that we are having an extended class today
 
 [📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [Steller sea lion matrix population model .Rmd](ssl_model.Rmd)
 
-## 
+## Updates to Materials following class session
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [Steller sea lion matrix population model .Rmd](ssl_model.Rmd)
+
+🖥️ [Steller sea lion model graph slide](ssl_graph_complete_2025-09-11.pptx)
