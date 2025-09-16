@@ -11,7 +11,8 @@ library(tidyverse)
 ```
 
 ```{r data}
-pups <- read_csv("../data/SSLpupcounts2016.csv")
+pups <- read_csv("../data/SSLpupcounts2016.csv") #|>
+  #janitor::clean_names()
 nonpups <- read_csv("../data/SSLnonpupcounts2016.csv")
 pups
 ```
@@ -91,10 +92,10 @@ nonpups
 ## Do a population projection for 40 years
 ```{r projection}
 
-Nstore <- matrix(rep(NA, 80), byrow = TRUE, ncol = 2)
+Nstore <- matrix(rep(NA, 120), byrow = TRUE, ncol = 2)
 Nstore[1,] <- N0
 head(Nstore)
-for (t in 2:40)
+for (t in 2:60)
   Nstore[t,] <- X%*%Nstore[t-1,]
 head(Nstore)
 tail(Nstore)
@@ -107,4 +108,31 @@ sum(Nstore[40,])/sum(Nstore[39,])
 eigen(X)
 library(popbio)
 eigen.analysis(X)
+```
+
+
+```{r}
+model_projection <- bind_cols(Nstore, seq(1960, by=1, length.out = 60))
+names(model_projection) <- c("pups","nonpups","year")
+model_projection <- model_projection |>
+  select(year, everything())
+model_projection
+```
+
+```{r}
+model_projection |>
+  ggplot() +
+  aes(x = year, y = pups) +
+  geom_line() +
+  ylim(0,NA) +
+  geom_point(data = se_pups, aes(x = Year, y = pupcount))
+```
+
+```{r}
+model_projection |>
+  ggplot() +
+  aes(x = year, y = nonpups) +
+  geom_line() +
+  ylim(0,NA) +
+  geom_point(data = se_nonpups, aes(x = Year, y = adultcount))
 ```
