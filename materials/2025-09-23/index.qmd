@@ -1,0 +1,24 @@
+---
+title: "2025-09-23"
+editor: visual
+---
+
+Introduction to RTMB
+
+## Participate
+
+🖥️ [Lecture - Introduction to RTMB](01_Lecture_RTMB-Intro.pptx)
+
+📂 [Ballard locks 2025 sockeye salmon counts](../data/2025-ballard-sockeye-counts.csv)
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [linear regression RTMB example](rtmb_linear_regression.R)
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [Poisson GLM RTMB example](rtmb_poisson_glm.R)
+
+## Background Reading
+
+📖 [Kristensen, K., Nielsen, A., Berg, C. W., Skaug, H., & Bell, B. M. (2016). TMB: automatic differentiation and Laplace approximation. Journal of statistical software, 70, 1-21.](https://doi.org/10.18637/jss.v070.i05)
+
+📖 [RTMB package documentation](https://cran.r-project.org/web/packages/RTMB/RTMB.pdf)
+
+## 
