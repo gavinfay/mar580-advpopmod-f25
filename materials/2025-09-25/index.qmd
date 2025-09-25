@@ -13,4 +13,6 @@ Moar RTMB - random effects
 
 [📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [mixed effects streams example R script](mixed_effects.R)
 
-## 
+## Background reading (for growth example)
+
+📖 [Laslett, G. M., Eveson, J. P., & Polacheck, T. (2002). A flexible maximum likelihood approach for fitting growth curves to tag recapture data. Canadian Journal of Fisheries and Aquatic Sciences, 59(6), 976-9](https://doi.org/10.1139/f02-069)
