@@ -1,0 +1,14 @@
+---
+title: "2025-09-30"
+editor: visual
+---
+
+## Intro to State-space models
+
+## Preparation
+
+📖 Newman et al. 2014. Chapter 3, and Chapter 4.1 - 4.4
+
+## Participate
+
+## 
