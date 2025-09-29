@@ -11,4 +11,12 @@ editor: visual
 
 ## Participate
 
-## 
+🖥️ [Lecture - Intro to state-space models](Lecture_SSM.pptx)
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [coho salmon state-space Ricker model R script](coho.R)
+
+📖 [state-space modeling lab (lingcod)](statespace_lab.pdf)
+
+📂 [lingcod data](data/lingcod.dat)
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [Schnute's lingcod R script skeleton](lingcod.R)
