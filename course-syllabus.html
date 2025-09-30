@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-c16d2075821f60783b9dd602420178f9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -218,7 +218,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="syllabus/MAR580-ADVPOPMOD_syllabus_f2025_web_2025-08-28.pdf" title="PDF of syllabus"><strong>Click here</strong></a> <strong>to download a PDF copy of the syllabus. <em>(</em></strong><em>last updated 2025-08-28)</em></p>
+<p><a href="https://docs.google.com/document/d/111Ct5SDTLSoszf1GKrOC7EBgdaLs-6148x3xpfl6mwA/edit?usp=sharing"><strong>Click here</strong></a> <strong>to view the current Google Doc version of the syllabus. <em>(</em></strong><em>last updated 2025-09-30).</em> The website version below is copied from that on 2025-09-30.</p>
+<p><a href="syllabus/MAR580-ADVPOPMOD_syllabus_f2025_web_2025-08-28.pdf" title="PDF of syllabus"><strong>Click here</strong></a> to view the pdf of the syllabus distributed to students at the start of the semester.</p>
+<hr>
 <p><strong>Semester: Fall 2025</strong></p>
 <p><strong>Course Number: MAR 580</strong></p>
 <p><strong>Course Title: Advanced Population Modeling for Management of Living Natural Resources</strong></p>
@@ -228,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Class Location:</strong> SMAST East Room 247</p>
 <pre><code>        836 S Rodney French Blvd, New Bedford, MA 02744
 
-        and synchronous via Zoom</code></pre>
+        and synchronous [via Zoom](https://umassd.zoom.us/j/92442579566?pwd=vmyQOoKTaxeKjIiVrCO2uELmhsYJt8.1)</code></pre>
 <p><strong>Class Time:</strong> Tuesday/Thursday 2:00-3:30</p>
 <p><strong>Course website:</strong> <a href="http://gavinfay.github.io/mar580-advpopmod-f25">gavinfay.github.io/mar580-advpopmod-f25</a></p>
 <p><strong>Student Hours:</strong> Mon 2:00-3:00, Tue 3:30-4:30, Thu 3:30-4:30</p>
@@ -277,7 +279,10 @@ ul.task-list li input[type="checkbox"] {
 <p>We will make use of several software packages, but the primary ones you will need:</p>
 <ol type="1">
 <li><p>R (free download at <a href="http://r-project.org" class="uri">http://r-project.org</a>). Students should also install Rstudio, an integrated development environment for R, free download at <a href="about:blank">posit.co/</a>).</p></li>
-<li><p>Template Model Builder (see <a href="https://github.com/kaskr/adcomp/wiki/Download" class="uri">https://github.com/kaskr/adcomp/wiki/Download</a> for installation instructions, and troubleshooting).</p></li>
+<li><p>RTMB: R bindings for Template Model Builder (<a href="https://github.com/kaskr/RTMB" class="uri">https://github.com/kaskr/RTMB</a>)</p>
+<ol type="1">
+<li>Note that we are using RTMB rather than TMB, but you still might like to download Template Model Builder (see<a href="https://github.com/kaskr/adcomp/wiki/Download">https://github.com/kaskr/adcomp/wiki/Download</a> for installation instructions, and troubleshooting).</li>
+</ol></li>
 </ol>
 <p>I will walk through installation and use of TMB and reorient people to the RStudio IDE as part of the software during our first lab session. You should update your version of both R and RStudio for the course (I will distribute the version of R that I shall be using for the course later this summer). If needed, web browser access to R sessions will also be provided through a cloud-based instance of RStudio via posit.cloud. Other IDEs are available (e.g.&nbsp;VS Code, Positron), and you may use the platform of your choice, however because I have to choose something to teach in, I will use RStudio in explanations and examples.</p>
 <p><br>
@@ -301,10 +306,10 @@ ul.task-list li input[type="checkbox"] {
 </p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 47%">
+<col style="width: 31%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -320,168 +325,166 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 </tr>
 <tr class="odd">
-<td>Sep 9*</td>
-<td>Tu</td>
-<td>process-based model building, matrix pop dy models</td>
-<td>HW 1 assigned</td>
-</tr>
-<tr class="even">
 <td>Sep 11</td>
 <td>Th</td>
-<td>state-space models</td>
-<td></td>
+<td>process-based model building, matrix pop dy models<br>
+(double class due to instructor conflict on Sep 9)</td>
+<td>HW 1 assigned<br>
+(Bowhead whales)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Sep 16</td>
 <td>Tu</td>
 <td>NO CLASS - ICES ANNUAL SCIENCE CONFERENCE</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Sep 18</td>
 <td>Th</td>
 <td>NO CLASS - ICES ANNUAL SCIENCE CONFERENCE</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Sep 23</td>
 <td>Tu</td>
-<td>Introduction to Template Model Builder</td>
+<td>Introduction to RTMB</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Sep 25</td>
 <td>Th</td>
-<td>TMB session 02, surplus production models</td>
+<td>RTMB session 02, mixed effects models</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Sep 30</td>
 <td>Tu</td>
-<td>TMB session 03, coho salmon example</td>
+<td>RTMB session 03, state-space models<br>
+(coho salmon &amp; lingcod examples)</td>
 <td>HW1 due</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Oct 2</td>
 <td>Th</td>
-<td>Coho salmon lab review, HW2 (Steller sea lion modeling) assigned</td>
-<td>HW 2 assigned</td>
+<td>Lingcod lab review,<br>
+Surplus production models</td>
+<td>HW 2 assigned (Steller sea lions)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Oct 7</td>
 <td>Tu</td>
 <td>age-structured models, statistical catch at age</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Oct 9</td>
 <td>Th</td>
 <td>model evaluation, simulation testing</td>
-<td>HW 2 due</td>
-</tr>
-<tr class="odd">
-<td>Oct 14</td>
-<td>Tu</td>
-<td>integrated population modeling I</td>
 <td></td>
 </tr>
 <tr class="even">
+<td>Oct 14</td>
+<td>Tu</td>
+<td>integrated population modeling I</td>
+<td>HW 2 due</td>
+</tr>
+<tr class="odd">
 <td>Oct 16</td>
 <td>Th</td>
 <td>integrated population modeling II</td>
 <td>HW 3 assigned</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Oct 21</td>
 <td>Tu</td>
 <td>assessment model continuum and data limited methods</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Oct 23</td>
 <td>Th</td>
 <td>assessment model continuum and data limited methods</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Oct 28</td>
 <td>Tu</td>
 <td>diagnostics and data-weighting</td>
 <td>HW 3 due</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Oct 30</td>
 <td>Th</td>
 <td>reference point estimation</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Nov 4</td>
 <td>Tu</td>
 <td>projections, decision tables</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Nov 6</td>
 <td>Th</td>
 <td>Bayesian estimation, MCMC</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Nov 11</td>
 <td>Tu</td>
 <td>NO CLASS - Veterans Day</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Nov 13</td>
 <td>Th</td>
 <td>covariates and time-varying parameters</td>
 <td>HW 4 assigned</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Nov 18</td>
 <td>Tu</td>
 <td>Stock assessment software packages</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Nov 20</td>
 <td>Th</td>
 <td>Woods Hole Assessment Model</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Nov 25</td>
 <td>Tu</td>
 <td>multispecies models</td>
 <td>HW 4 due</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Nov 27</td>
 <td>Th</td>
 <td>NO CLASS – THANKSGIVING</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Dec 2</td>
 <td>Tu</td>
 <td>multi-state and tag recovery models</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Dec 4</td>
 <td>Th</td>
 <td>more capture recapture models</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Dec 9</td>
 <td>Tu</td>
 <td>student project presentations</td>
 <td>draft reports due</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Dec 15</td>
 <td>Mo</td>
 <td>course review</td>
@@ -513,7 +516,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>This course, including student participation, will be recorded on video by the instructor and will be available to students in the course for viewing remotely and after each session. As the Zoom recordings will contain student work, please do not share videos beyond the course attendees without the explicit permission of the instructor. Other course materials will be publicly available online.</p></li>
 <li><p>If you have read this far, please use google search to find a picture of a flightless bird that best reflects your response to coding error messages, and send it to Gavin Fay attached to an email with the subject line “Here is a response to an error message”, worth an extra 5 points on one homework assignment.</p></li>
 <li><p>Available academic support services are available at: <a href="http://www.umassd.edu/nfi/teaching-and-advising/course-syllabus/sample-disability-statement">www.umassd.edu/nfi/teaching-and-advising/course-syllabus/sample-disability-statement</a>&nbsp;&nbsp;</p></li>
-<li><p>SMAST Code of Conduct and Diversity statement:<a href="https://www.umassd.edu/media/umassdartmouth/smast/lab-pdf-files/SMAST-Code-of-Conduct-and-Diversity-Statement.pdf" class="uri">https://www.umassd.edu/media/umassdartmouth/smast/lab-pdf-files/SMAST-Code-of-Conduct-and-Diversity-Statement.pdf</a></p></li>
+<li><p>SMAST Code of Conduct and Diversity statement:<a href="https://www.umassd.edu/media/umassdartmouth/smast/lab-pdf-files/SMAST-Code-of-Conduct-and-Diversity-Statement.pdf">https://www.umassd.edu/media/umassdartmouth/smast/lab-pdf-files/SMAST-Code-of-Conduct-and-Diversity-Statement.pdf</a></p></li>
 </ol>
 <p><br>
 </p>
@@ -522,10 +525,10 @@ ul.task-list li input[type="checkbox"] {
 </p>
 <p><strong>Title IX statement:</strong> The purpose of a university is to disseminate information, as well as to explore a universe of ideas, to encourage diverse perspectives and robust expression, and to foster the development of critical and analytical thinking skills. In many classes, including this one, students and faculty examine and analyze challenging and controversial topics.</p>
 <p>&nbsp;</p>
-<p>If a topic covered in this class triggers post-traumatic stress or other emotional distress, please discuss the matter with the professor or seek out confidential resources available from the Counseling Center,<a href="http://www.umassd.edu/counselling/" class="uri">http://www.umassd.edu/counselling/</a>, 508-999-8648 or -8650, or the Victim Advocate in the Center for Women, Gender and Sexuality,<a href="http://www.umassd.edu/sexualviolence/" class="uri">http://www.umassd.edu/sexualviolence/</a>, 508-910-4584. In an emergency contact the Department of Public Safety at 508-999-9191 24 hrs./day.</p>
+<p>If a topic covered in this class triggers post-traumatic stress or other emotional distress, please discuss the matter with the professor or seek out confidential resources available from the Counseling Center,<a href="http://www.umassd.edu/counselling/">http://www.umassd.edu/counselling/</a>, 508-999-8648 or -8650, or the Victim Advocate in the Center for Women, Gender and Sexuality,<a href="http://www.umassd.edu/sexualviolence/">http://www.umassd.edu/sexualviolence/</a>, 508-910-4584. In an emergency contact the Department of Public Safety at 508-999-9191 24 hrs./day.</p>
 <p>&nbsp;</p>
 <p>UMass Dartmouth, following national guidance from the Office of Civil Rights, requires that faculty follow UMass Dartmouth policy as a “mandated reporter” of any disclosure of sexual harassment, abuse, and/or violence shared with the faculty member in person and/or via email. These disclosures include but are not limited to reports of sexual assault, relational abuse, relational/domestic violence, and stalking. While faculty are often able to help students locate appropriate channels of assistance on campus, disclosure by the student to the faculty member requires that the faculty member inform the University’s Title IX Coordinator in the Office of Diversity, Equity and Inclusion at 508-999-8008 to help ensure that the student’s safety and welfare is being addressed, even if the student requests that the disclosure not be shared.</p>
-<p>For confidential counseling support and assistance, please go to<a href="http://www.umassd.edu/sexualviolence/" class="uri">http://www.umassd.edu/sexualviolence/</a></p>
+<p>For confidential counseling support and assistance, please go to<a href="http://www.umassd.edu/sexualviolence/">http://www.umassd.edu/sexualviolence/</a></p>
 <p><br>
 </p>
 <p><strong>Technology Expectations</strong></p>
