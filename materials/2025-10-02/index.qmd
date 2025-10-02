@@ -1,0 +1,22 @@
+---
+title: "2025-10-02"
+editor: visual
+---
+
+## State-space models Session 2
+
+## Preparation
+
+📖 Newman et al. 2014. Chapter 3, and Chapter 4.1 - 4.4
+
+## Participate
+
+🖥️ [Lecture - numerical methods review & more state space modeling](numerical-methods_SSM-redux.pptx)
+
+📖 [state-space modeling lab (lingcod)](statespace_lab.pdf)
+
+📂 [lingcod data](data/lingcod.dat)
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [Schnute's lingcod R script skeleton](lingcod.R)
+
+📂 [Steller sea lion data](data/ssl-data.rds)
