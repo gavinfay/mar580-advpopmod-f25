@@ -1,0 +1,22 @@
+---
+title: "2025-10-07"
+editor: visual
+---
+
+## State-space models recap, Biomass dynamics models
+
+## Preparation
+
+📖 Kokkalis et al. 2024. <https://doi.org/10.1016/j.fishres.2024.107010>
+
+## Participate
+
+🖥️ [Lecture - biomass dynamics](biomass-dynamics.pptx)
+
+📖 [state-space modeling lab (lingcod)](statespace_lab.pdf)
+
+📂 [flounder data](data/flounder_index_data.xlsx)
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [state-space surplus production model RTMB script](biomassdynamics-pt.R)
+
+📂 [Steller sea lion data](data/ssl-data.rds)
