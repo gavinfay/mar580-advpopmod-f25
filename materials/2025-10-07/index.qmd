@@ -21,4 +21,8 @@ editor: visual
 
 📂 [Steller sea lion data](data/ssl-data.rds)
 
+**October 9**
+
 [📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [Biomass dynamics modeling lab (Oct 9)](biomassdynamics-lab.pdf)
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [Pella-tomlinson RTMB script (Oct 9)](biomassdynamics-pt_sim.R)
