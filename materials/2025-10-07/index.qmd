@@ -20,3 +20,5 @@ editor: visual
 [📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [state-space surplus production model RTMB script](biomassdynamics-pt.R)
 
 📂 [Steller sea lion data](data/ssl-data.rds)
+
+[📋](https://gavinfay.github.io/mar536-biolstats2-s25/labs/lab-exercise-01.pdf) [Biomass dynamics modeling lab (Oct 9)](biomassdynamics-lab.pdf)
