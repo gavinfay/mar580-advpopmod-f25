@@ -1,0 +1,16 @@
+---
+title: "2025-10-14 & 2025-10-16"
+editor: visual
+---
+
+## Age structured models
+
+## Preparation
+
+📖 [Restrepo, V. R., & Legault, C. M. (1998). A stochastic implementation of an age-structured production model. *University of Alaska Sea Grant College Program, Rep*, (98-01), 435-450.](https://repository.library.noaa.gov/view/noaa/40687/noaa_40687_DS1.pdf#page=449)
+
+📖 [Fournier, D., & Archibald, C. P. (1982). A general theory for analyzing catch at age data. Canadian Journal of Fisheries and Aquatic Sciences, 39(8), 1195-1207.](https://doi.org/10.1139/f82-157)
+
+## Participate
+
+🖥️ [Lecture - age-structured modeling](agestructure_mods.pdf)
