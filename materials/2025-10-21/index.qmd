@@ -1,0 +1,16 @@
+---
+title: "2025-10-21 & 2025-10-23"
+editor: visual
+---
+
+## Assessment model continuum and data limited methods
+
+Guest instructor: Dr. Jason Cope (adjunct professor, University of Washington)
+
+## Preparation
+
+📖 [Cope, J. M. (2024). The good practices of practicable alchemy in the stock assessment continuum: Fundamentals and principles of analytical methods to support science-based fisheries management under data and resource limitations. Fisheries Research, 270, 106859.](https://doi.org/10.1016/j.fishres.2023.106859)
+
+## Participate
+
+🖥️ [Slide deck](SACtool_slides.pdf)

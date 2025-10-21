@@ -59,7 +59,9 @@ website:
           - href: materials/2025-10-07/index.qmd
             text: "2025-10-07 & 2015-10-09"  
           - href: materials/2025-10-14/index.qmd
-            text: "2025-10-14 & 2015-10-16"              
+            text: "2025-10-14 & 2015-10-16"   
+          - href: materials/2025-10-21/index.qmd
+            text: "2025-10-21 & 2015-10-23"   
 format:
   html:
     theme: cosmo
