@@ -62,6 +62,12 @@
     nll <- nll - dnorm(log_pups[1], log(beta_par[1])+log_n0, tau[1], TRUE);
     #nll <- nll - dnorm(log_pups[1], log_n0[1], tau[1], TRUE);
     N[1,1] <- exp(log_pups[1])
+    
+    # intermediate steps for calculating predicted nonpups
+    # pred_nonpups = beta[2] * pups + beta[3] * nonpups
+    # pred_nonpups = beta[2] * beta[1] * nonpups + beta[3] * nonpups
+    # pred_nonpups = (beta[2] * beta[1] + beta[3] )* nonpups
+    
     pnp <- log((beta_par[2]*beta_par[1] + beta_par[3])) + log_n0
     #pnp = log(beta_par[2]*exp(log_n0[1]) + beta_par[3]*exp(log_n0[2]))
     nll <- nll - dnorm(log_nonpups[1], pnp, tau[2], TRUE)
