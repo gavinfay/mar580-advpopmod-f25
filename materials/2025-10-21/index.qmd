@@ -14,3 +14,7 @@ Guest instructor: Dr. Jason Cope (adjunct professor, University of Washington)
 ## Participate
 
 🖥️ [Slide deck](SACtool_slides.pdf)
+
+🖥️ [SACtool github site](https://github.com/shcaba/SS-DL-tool)
+
+📖 [SACtool homework assignment (HW 3)](SAC tool assignment.zip)
