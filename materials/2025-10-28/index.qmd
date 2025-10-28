@@ -1,0 +1,16 @@
+---
+title: "2025-10-28 & 2025-10-30"
+editor: visual
+---
+
+## Integrated Analysis / Integrated Population Modeling
+
+## Preparation
+
+📖 [Zipkin, E. F., & Saunders, S. P. (2018). Synthesizing multiple data types for biological conservation using integrated population models. *Biological Conservation*, *217*, 240-250.](https://doi.org/10.1016/j.biocon.2017.10.017 "https://doi.org/10.1016/j.biocon.2017.10.017")
+
+📖 [Maunder, M. N., & Punt, A. E. (2013). A review of integrated analysis in fisheries stock assessment. *Fisheries research*, *142*, 61-74.](https://doi.org/10.1016/j.fishres.2012.07.025 "https://doi.org/10.1016/j.fishres.2012.07.025")
+
+## Participate
+
+🖥️ [Slide deck](ia_models.pdf)
