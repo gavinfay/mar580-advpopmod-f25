@@ -14,3 +14,9 @@ editor: visual
 ## Participate
 
 🖥️ [Slide deck](ia_models.pdf)
+
+2023 Black Sea Bass Stock Synthesis Example
+
+[Slide deck](2023_BSB_UNIT_ppt_TOR4-6_stocksynthesis.pdf)
+
+[Working paper](2023_BSB_UNIT_WP_Fayetal2023_StockSynthesisApp-1.pdf)
