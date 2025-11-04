@@ -1,0 +1,12 @@
+---
+title: "2025-11-04"
+editor: visual
+---
+
+## Statistical Catch At Age Models in RTMB
+
+## Participate
+
+🖥️ [aspm-rtmb.R](aspm-rtmb.R)
+
+🖥️ [scaa-rtmb.R](scaa-rtmb.R)

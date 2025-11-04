@@ -165,9 +165,9 @@ aspm_fun <- function(data, parameters) {
   #catch predictions
   catch_pred <- rep(0, nyrs)
   for (iyr in 1:nyrs) {
-    catch_pred[iyr] = 0
-    for (age in 1:nages)
-      catch_pred[iyr] = catch_pred[iyr] + weight[age]*F[iyr,age]*N[iyr,age]*(1.0-exp(-1.*Z[iyr,age]))/Z[iyr,age]
+    catch_pred[iyr] = sum(weight*F[iyr,]*N[iyr,]*(1.0-exp(-1.*Z[iyr,]))/Z[iyr,])
+    # for (age in 1:nages)
+    #   catch_pred[iyr] = catch_pred[iyr] + weight[age]*F[iyr,age]*N[iyr,age]*(1.0-exp(-1.*Z[iyr,age]))/Z[iyr,age]
   }
   
   REPORT(index_pred)
@@ -177,15 +177,14 @@ aspm_fun <- function(data, parameters) {
   # matrix<Type> paa(nyrs,nage_fish);
   # paa.setZero();
   # // calculate predicted catch at ages in numbers
-  # for (int iyr=0;iyr<nyrs;iyr++) {
-  #   for (int age=0; age<nages; age++) {
-  #     int jage = age;
-  #     if (age>=nage_fish) jage = nage_fish-1;
-  #     paa(iyr,jage) += F(iyr,age)*N(iyr,age)*(1.0-exp(-1.*Z(iyr,age)))/Z(iyr,age); 
-  #   }
-  #   paa.row(iyr) = paa.row(iyr)/paa.row(iyr).sum();
-  # }
+  p_caa <- matrix(0, nrow = nyrs, ncol = nages)
+  for (iyr in 1:nyrs) {
+    p_caa[iyr,] = weight*F[iyr,]*N[iyr,]*(1.0-exp(-1.*Z[iyr,]))/Z[iyr,]
+    p_caa[iyr,] = p_caa[iyr,]/sum(p_caa[iyr,])
+  }
+  
   # //predictions of survey age comp
+  p_saa <- matrix(0, nrow = nyrs, ncol = nages)
   # matrix<Type> spaa(nyrs,nage_surv);
   # spaa.setZero();
   # // calculatye predicted catch at ages in numbers
