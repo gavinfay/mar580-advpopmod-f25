@@ -10,3 +10,15 @@ editor: visual
 🖥️ [aspm-rtmb.R](aspm-rtmb.R)
 
 🖥️ [scaa-rtmb.R](scaa-rtmb.R)
+
+## 2025-11-06
+
+Reading:
+
+-   Chapter 5
+
+-   🖥️ [Carvalho et al. 2021](https://doi.org/10.1016/j.fishres.2021.105959)
+
+🖥️ [integrated analysis diagnostics](../2025-10-28/ia_diagnostics.pdf) slide deck
+
+🖥️ [scaa-rtmb-diagnostics.R](scaa-rtmb-diagnostics.R)
