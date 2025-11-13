@@ -15,4 +15,6 @@ editor: visual
 
 🖥️ [Assignment 4 (reference points and SCAA projections)](../hw4/hw4.pdf)
 
+[flounder biology data](data/floundah_biology.txt)
+
 ## 
