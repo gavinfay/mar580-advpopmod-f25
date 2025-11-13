@@ -17,4 +17,6 @@ editor: visual
 
 [flounder biology data](data/floundah_biology.txt)
 
+[YPR & SPBR functions](SPR_calcs.R)
+
 ## 
