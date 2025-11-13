@@ -1,12 +1,19 @@
 ---
 title: 'Advanced Population Modeling : Reference Points'
 author: "Gavin Fay"
-date: "11/14/2023"
+date: "2025-11-13"
 output:
   beamer_presentation:
     colortheme: seagull
     fonttheme: structurebold
 ---
+
+## Objectives
+
+- Project updates
+- Introduction to Reference Points
+- Population Projections
+
 
 ## (Biological) Reference Points (BRP)
 
@@ -22,7 +29,14 @@ output:
 
 ![](reffigs/05.png)
 
+## TLDR
+
+![](reffigs/cinar-report.png)
+
 ## Production models
+
+![](reffigs/schaefer.png)
+
 
 ## Reference points from Yield-per-recruit (YPR)
 
@@ -45,25 +59,6 @@ These BRPs are in context of growth overfishing.
 -   Under no fishing, 100% Spawning potential obtained.\
 -   Quantify spawning stock biomass per recruit relative to unfished (Spawning Potential Ratio)\
 -   e.g. $F_{35}$, the $F$ that results in a SPR of 35% the unfished level.
-
-<!-- ## Lab exercise: Floundah per-recruit analysis -->
-
-<!-- -   Write functions in R that calculate: -->
-
-<!-- 1.  Yield-Per-Recruit -->
-
-<!-- $$ YPR(F) = \sum_{a} w_as_aFN_{a}(1-exp(-(s_aF+M)))/(s_aF + M)$$ 2. Spawning Biomass Per Recruit -->
-
-<!-- $$ SPBR(F) = \sum_{a} m_aw_aN_{a} $$ -->
-
-<!-- $$ N_a = N_{a-1}exp(-(s_{a-1}F+M)) $$ -->
-
-<!-- -   Use the biology (& selectivity) data for floundah to find the values for: -->
-
-<!-- 1.  $F_{max}$ -->
-<!-- 2.  SBPR0 -->
-<!-- 3.  SBPR as a function of $F$ -->
-<!-- 4.  $F_{40\%}$, i.e. F where $SBPR(F)/SBPR0 = 0.4$ -->
 
 ------------------------------------------------------------------------
 
@@ -98,3 +93,24 @@ These BRPs are in context of growth overfishing.
 -   Rely on projections, given assumptions about future dynamics
 -   e.g. Future recruitment, weight at age, etc.
 -   Take some quantile of the distribution over some time-frame
+
+## Lab exercise: Floundah per-recruit analysis
+
+-   Write functions in R that calculate:
+
+1.  Yield-Per-Recruit
+
+$$ YPR(F) = \sum_{a} w_as_aFN_{a}(1-exp(-(s_aF+M)))/(s_aF + M)$$ 2. Spawning Biomass Per Recruit
+
+$$ SPBR(F) = \sum_{a} m_aw_aN_{a} $$
+
+$$ N_a = N_{a-1}exp(-(s_{a-1}F+M)) $$
+
+## Lab exercise: Floundah per-recruit analysis
+
+-   Use the biology (& selectivity) data for floundah to find the values for:
+
+1.  $F_{max}$
+2.  SBPR0
+3.  SBPR as a function of $F$
+4.  $F_{40\%}$, i.e. F where $SBPR(F)/SBPR0 = 0.4$

@@ -1,7 +1,7 @@
 ---
 title: 'Advanced Population Modeling : Projections'
 author: "Gavin Fay"
-date: "11/21/2023"
+date: "2025-11-13"
 output:
   beamer_presentation:
     colortheme: seagull
@@ -72,11 +72,11 @@ output:
 
 ![](reffigs/11.jpg)
 
-## Lab exercise 1 - deterministic projection
+<!-- ## Lab exercise 1 - deterministic projection -->
 
--   Using the Schaefer biomass dynamics model, conduct a deterministic 30 year projection, with fixed exploitation rates of F=0.1, F=0.2, and F=0.3.
+<!-- -   Using the Schaefer biomass dynamics model, conduct a deterministic 30 year projection, with fixed exploitation rates of F=0.1, F=0.2, and F=0.3. -->
 
--   Summarize the results in terms of average catch over the projection, and final year biomass relative to BMSY. (hint, for the Schaefer model $BMSY = 0.5K$)
+<!-- -   Summarize the results in terms of average catch over the projection, and final year biomass relative to BMSY. (hint, for the Schaefer model $BMSY = 0.5K$) -->
 
 <!-- ## Lab exercise 2 - stochastic projection -->
 
