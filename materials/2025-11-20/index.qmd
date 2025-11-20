@@ -1,0 +1,18 @@
+---
+title: "2025-11-20"
+editor: visual
+---
+
+## Bayesian estimation
+
+## Prepare
+
+## Participate
+
+🖥️ [Bayesian estimation slide deck](Bayesian_estimation.pptx)
+
+## Example
+
+🖥️ [linear regression example](rtmbstan_linear_regression.R)
+
+### 

@@ -30,8 +30,8 @@ SBPR <- function(F = 0, M = 0.4, selex, weight, maturity) {
   SBPR <- sum(weight * maturity * N)
   return(SBPR)  
 }
-SBPR(F = 1, M = 0.4, selex = selex, weight = weight, maturity = maturity)
-
+SBPR(F = 0, M = 0.4, selex = selex, weight = weight, maturity = maturity)
+SBPR(F = 0.5, M = 0.4, selex = selex, weight = weight, maturity = maturity)
 
 
 

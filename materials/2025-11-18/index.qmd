@@ -1,22 +1,22 @@
 ---
-title: "2025-11-13"
+title: "2025-11-18"
 editor: visual
 ---
 
-## Reference Points & Projections
+## Covariates in stock assessments
+
+## Prepare
+
+Hollowed, A. B., Bond, N. A., Wilderbuer, T. K., Stockhausen, W. T., A'mar, Z. T., Beamish, R. J., ... & Schirripa, M. J. (2009). A framework for modelling fish and shellfish responses to future climate change. *ICES Journal of Marine Science*, *66*(7), 1584-1594. <https://doi.org/10.1093/icesjms/fsp057>
 
 ## Participate
 
-🖥️ [Reference points slide deck](refpts.pdf)
+🖥️ [covariates in assessment models slide deck](covariates-in-stockassessment.pptx)
 
-🖥️ [Projections slide deck](projections.pdf)
+## Example
 
-### Homework 4 (due 2025-11-25)
+[dynamic reference points in Northeast US Atlantic herring](https://github.com/gavinfay/mebm-models/blob/main/course-materials/assignments/hw-01/hw-01.pdf)
 
-🖥️ [Assignment 4 (reference points and SCAA projections)](../hw4/hw4.pdf)
+🖥️ [materials](https://github.com/gavinfay/mebm-models/tree/main/course-materials/assignments/hw-01)
 
-[flounder biology data](data/floundah_biology.txt)
-
-[YPR & SPBR functions](SPR_calcs.R)
-
-## 
+### 
