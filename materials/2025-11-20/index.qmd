@@ -7,6 +7,12 @@ editor: visual
 
 ## Prepare
 
+-   Ellison, A. M. (2004). Bayesian inference in ecology. Ecology letters, 7(6), 509-520. <Https://doi.org/10.1111/j.1461-0248.2004.00603.x> 
+
+I also really like Cole Monnahan's recent paper on developing a Bayesian workflow for stock assessment, but that is a meatier read so would recommend the shorter one above.
+
+-   Monnahan, C. C. (2024). Toward good practices for Bayesian data-rich fisheries stock assessments using a modern statistical workflow. *Fisheries Research*, *275*, 107024. <Https://doi.org/10.1016/j.fishres.2024.107024> 
+
 ## Participate
 
 🖥️ [Bayesian estimation slide deck](Bayesian_estimation.pptx)
