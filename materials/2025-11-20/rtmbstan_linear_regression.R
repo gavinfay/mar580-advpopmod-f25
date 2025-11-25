@@ -78,8 +78,14 @@ ggplot(data) +
 
 
 # probabilistic syntax example
-f2 <- function(parms) {
+f2 <- function(data, parms) {
+  require(RTMB)
   getAll(data, parms, warn=FALSE)
+  #y <- data$y
+  #x <- data$x
+  #b0 <- parms$b0
+  #b1 <- parms$b1
+  #logSigma <- parms$logSigma
   ## Optional (enables extra RTMB features)
   y <- OBS(y)
   # ## Initialize negative log likelihood
@@ -94,27 +100,31 @@ f2 <- function(parms) {
   # nll
 }
 
+cmb <- function(f, d) function(p) f(p, d)
+
 #process the objective function
-obj <- MakeADFun(f2, parameters)
+obj <- MakeADFun(cmb(f2, data), parameters)
 
 #fit the model using nlminb
 fit <- nlminb(obj$par, obj$fn, obj$gr)
 fit
 
-### fit the model with tmbstan
+# ### fit the model with tmbstan
+# environment(obj) <- new.env() ## WORKAROUND
+# environment(obj)$data <- data ## WORKAROUND
 
 ### TMB with STAN
 library(shinystan)
 library(tmbstan)
 # Run a single chain in serial with defaults
-stanfit <- tmbstan(obj, chains=1)
+stanfit <- tmbstan(obj) #, chains=1)
 
 # ## Run in parallel with a init function
-# cores <- parallel::detectCores()-1
-# options(mc.cores = cores)
-# # init.fn <- function()
-# #   list(u=rnorm(114), beta=rnorm(2), logsdu=runif(1,0,10), logsd0=runif(1,0,1))
-# stanfit <- tmbstan(obj, chains=cores, open_progress=FALSE) #, init=fit$par)
+cores <- parallel::detectCores()-1
+options(mc.cores = cores)
+# init.fn <- function()
+#   list(u=rnorm(114), beta=rnorm(2), logsdu=runif(1,0,10), logsd0=runif(1,0,1))
+stanfit <- tmbstan(obj, chains=cores, open_progress=FALSE) #, init=fit$par)
 
 ## To explore the fit use shinystan
 launch_shinystan(stanfit)
