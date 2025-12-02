@@ -72,6 +72,9 @@ website:
             text: "2025-11-18"
           - href: materials/2025-11-20/index.qmd
             text: "2025-11-20"            
+          - href: materials/2025-12-02/index.qmd
+            text: "2025-12-02"            
+
             
 format:
   html:
