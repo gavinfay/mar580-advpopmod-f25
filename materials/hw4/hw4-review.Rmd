@@ -1,0 +1,103 @@
+---
+output: pdf_document
+---
+## MAR 580: Advanced Population Modeling
+## Fall 2025
+## Homework Assignment 4
+# Reference points and population projections
+
+### Due: 2025-11-25, 9:30 am
+
+Please provide Gavin with a brief report containing your solutions, and also include your R scripts (or markdown file) and any additional files needed to run your assignment.  
+
+```{r}
+# read in biol data
+# nages <- scan("data/floundah_biology.txt",n=1,skip=9)
+# maturity <- scan("data/floundah_biology.txt",n=nages,skip=11)
+# selex <- scan("data/floundah_biology.txt",n=nages,skip=13)
+# weight <- scan("data/floundah_biology.txt",n=nages,skip=15)
+M <- 0.4
+
+
+## Numbers-per-recruit
+
+NPR <- function(F,M,selex) {
+  nages <- length(weight)
+  N <- rep(0,nages)
+  N[1] <- 1
+  for (age in 2:nages)
+    N[age] <- N[age-1]*exp(-1*(selex[age-1]*F+M))
+  N[nages] <- N[nages]/(1-exp(-1*(selex[age]*F+M)))
+  return(N)
+}
+npr <- NPR(F=0,M,selex)
+
+## Yield-per-recruit
+
+YPR <- function(F,M,weight,selex) {
+  N <- NPR(F,M,selex)
+  Z <- selex*F+M
+  yield <- sum(weight*selex*F*N*(1-exp(-Z))/Z)
+  return(yield)
+}
+#YPR(F=0.1,npr,M,weight,selex)
+YPR(F=0.1,M,weight,selex)
+
+## Spawning Biomass per recruit
+
+SBPR <- function(F,M,weight,selex,maturity) {
+  N <- NPR(F,M,selex)
+  sbpr <- sum(N*weight*maturity)
+  return(sbpr)
+}
+#SBPR(0,M,weight,selex,maturity)
+#SBPR(0.4,M,weight,selex,maturity)
+
+```
+
+
+1. (40 points) Use the biological information for floundah (weight at age, maturity, etc.). Assume M=0.4. Estimate $F_{MSY}$ for floundah for the full range of steepness (steepness can take values between 0.2 & 1.0). Plot how the $F_{MSY}$ estimates change as a function of steepness. How do the estimates for $F_{MSY}$ compare with $F_{40\%}$? (bonus 5 pts: and also compared to the $F_{MSY}$ obtained from the Schaefer model for these data) What might the implications of assuming SPR-based proxy reference points be for this stock?    
+[Note: No RTMB programming is required for this part of the assignment, you can do this all in R (or Excel)]  
+__hint__: You will (likely) want to write a function that allows you to optimize Yield given input values for F - this function will make use of the YPR and SBPR functions.  
+
+```{r}
+#given value for h =0.6
+# read in our biology
+# assume M = 0.4
+# FMSY F that gives the maximum yield, once we take into account the SRR
+SBPR(F)
+YPR(F)
+Yield(F) = R(F) * YPR(F)
+#search over Fs for maxYield
+R(F) = (4*h*Rzero*SSB/(SSB0*(1-h)+SSB*(5*h-1)))
+R(F) = (4*h*1*SBPR(F)/(1*SBPR(0)*(1-h)+SBPR(F)*(5*h-1)))
+
+FMSY <- rep(0, length(seq(0.205,0.995, 0.005)))
+i =-0
+for (h in seq(0.205,0.995,by=0.005)) {
+  i = i+1
+Fuse = seq(0,3,by = 0.02)
+
+R <- map_dbl(Fuse, function(F) (4*h*1*SBPR(F,M,weight,selex,maturity)/(1*SBPR(0,M,weight,selex,maturity)*(1-h)+SBPR(F,M,weight,selex,maturity)*(5*h-1))))
+YPR_ests <- map_dbl(Fuse, YPR, M = M, weight = weight, selex = selex)
+Yield = YPR_ests*R
+FMSY[i] <- Fuse[which.max(Yield)]
+}
+
+
+SBPR0 <- SBPR(0,M,weight,selex,maturity)
+SBPR_ests <- map_dbl(Fuse, SBPR,M=M,weight=weight,selex=selex,maturity=maturity)/SBPR0
+temp <- which(SBPR_ests>0.4)
+Fuse[temp[length(temp)]]
+
+```
+
+
+
+2. _BONUS(+10)_ How do the values for F-based reference points calculated in (1) change if M is different? (say 0.3 or 0.5)  
+
+3. (60 points) Population projection, comparing harvest policies. Use the SCAA model for floundah to perform stochastic projections (50 years, with recruitment variability) to derive expected performance under three harvest policies: (a) estimated $F_{MSY}$, (b) estimated $F_{40\%}$, and (c) the catch associated with a deterministic projection of the stock under $F_{40\%}$ given an assumption of average recruitment. Summarize the results in a decision table that includes (a) the median of the average spawning stock biomass over the last five years of the projection, (b) the median of the average catch over the last five years of the projection, and (c) the probability that spawning biomass at the end of the projection is below 50% $B_{MSY}$.  
+
+4. _BONUS(+20)_ Determine a stochastic estimate for $F_{MSY}$ that uses the ICES approach of maximizing the median of the distribution for projected catch (average the catch from the last 5 years of the projection). Compare this estimate for $F_{MSY}$ with that from Q3.   
+
+5. _BONUS(+20)_ Integrate parameter uncertainty into your evaluations of harvest policy performance in Q3.  

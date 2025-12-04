@@ -234,6 +234,8 @@ aspm_fun <- function(data, parameters) {
   nll <- nll - sum(dnorm(recdev, 0, exp(logSigmaR), log = TRUE))
   # 
   ADREPORT(SSB)
+  ADREPORT(h)
+  ADREPORT(fselex)
   nll
 }  
 

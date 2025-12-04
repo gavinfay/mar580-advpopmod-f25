@@ -1,5 +1,5 @@
 ---
-title: "2025-12-02"
+title: "2025-12-02 & 20250-12-04"
 editor: visual
 ---
 
@@ -9,4 +9,10 @@ editor: visual
 
 🖥️ [Multispecies models slide deck](multispecies-models.pptx)
 
-## 
+### Example: Isle Royale, Wolves + Moose
+
+MARSS user guide <https://cran.r-project.org/web/packages/MARSS/vignettes/UserGuide.pdf>
+
+MARSSTMB getting started <https://atsa-es.github.io/marssTMB/>
+
+![](images/clipboard-1540460406.png){width="581"}
